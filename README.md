@@ -13,9 +13,15 @@ A11yProbe is a package for checking the accessibility of a website. It allows de
 
 You can install A11yProbe using npm or yarn:
 
+```javascript
 npm install a11yprobe
+```
 
+or
+
+```javascript
 yarn add a11yprobe
+```
 
 ## Usage
 
@@ -28,6 +34,7 @@ To use A11yProbe, create a JSON file with the URL of your application:
 ```
 
 By default, A11yProbe will run accessibility tests using the Pa11y library with the WCAG 2.1 AA standard. You can also customize the options passed to Pa11y by creating a pa11y.json file in your project directory.
+
 ## Contributing
 
 Thank you for considering contributing to this project! We welcome any contributions, including bug fixes, new features, and documentation improvements. Before getting started, please take a moment to review the following guidelines:
@@ -47,5 +54,3 @@ We appreciate all contributions and will review them as quickly as possible. Tha
 ## License
 
 This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
-
-
