@@ -1,19 +1,17 @@
 {
   "name": "a11yprobe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for checking the accessibility of a website by automatically retrieving all subpages and running accessibility tests with the WCAG 2.1 AA standard.",
   "main": "lib/index.js",
-  "type": "module", 
+  "type": "module",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Cradoe/A11yProbe"
+  "bin": {
+    "a11yprobe": "lib/index.js"
   },
   "keywords": [
     "accessibility",
-    "pa11y",
-    "test",
-    "web"
+    "testing",
+    "a11y"
   ],
   "homepage": "https://github.com/Cradoe/A11yProbe",
   "scripts": {
@@ -21,7 +19,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
     "start": "node lib/index.js",
-    "publish:npm": "rm -rf lib && npm run build && npm publish --access public"
+    "publish:npm": "rm -rf lib && npm run build && npm publish"
   },
   "author": "Ismail Obadimu",
   "license": "ISC",
@@ -35,5 +33,12 @@
     "@types/pa11y": "^5.3.5",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/a11yprobe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/a11yprobe/issues"
   }
 }
