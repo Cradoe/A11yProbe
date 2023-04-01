@@ -25,19 +25,7 @@ To use A11yProbe, create a JSON file with the URL of your application:
 {
   "url": "https://example.com"
 }
-
-
-Then, import the runAccessibilityTests function from A11yProbe and pass in the path to your JSON file:
-
-
-import { runAccessibilityTests } from 'a11yprobe';
-
-
-
-runAccessibilityTests('./config.json');
-
-
-
+```
 
 By default, A11yProbe will run accessibility tests using the Pa11y library with the WCAG 2.1 AA standard. You can also customize the options passed to Pa11y by creating a pa11y.json file in your project directory.
 ## Contributing
@@ -60,4 +48,4 @@ We appreciate all contributions and will review them as quickly as possible. Tha
 
 This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
-```
+
