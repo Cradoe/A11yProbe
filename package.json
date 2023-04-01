@@ -1,6 +1,6 @@
 {
   "name": "a11yprobe",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A package for checking the accessibility of a website by automatically retrieving all subpages and running accessibility tests with the WCAG 2.1 AA standard.",
   "main": "lib/index.js",
   "private": false,
@@ -41,10 +41,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/a11yprobe.git"
+    "url": "https://github.com/cradoe/a11yprobe.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/a11yprobe/issues"
+    "url": "https://github.com/cradoe/a11yprobe/issues"
   },
   "publishConfig": {
     "access": "public"
