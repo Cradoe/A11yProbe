@@ -1,7 +1,7 @@
 {
   "name": "a11yprobe",
   "version": "1.0.0",
-  "description": "Your package description",
+  "description": "A package for checking the accessibility of a website by automatically retrieving all subpages and running accessibility tests with the WCAG 2.1 AA standard.",
   "main": "lib/index.js",
   "type": "module", 
   "private": false,
