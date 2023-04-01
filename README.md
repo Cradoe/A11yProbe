@@ -25,7 +25,7 @@ yarn add a11yprobe
 
 ## Usage
 
-To use A11yProbe, create a JSON file with the URL of your application:
+To use A11yProbe, create a a11yprobe.json file in the root of your project, fill the URL of your application:
 
 ```json
 {
