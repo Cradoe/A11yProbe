@@ -1,6 +1,6 @@
 {
   "name": "a11yprobe",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "A package for checking the accessibility of a website by automatically retrieving all subpages and running accessibility tests with the WCAG 2.1 AA standard.",
   "main": "lib/index.js",
   "private": false,
@@ -19,6 +19,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
     "publish:npm": "rm -rf lib && npm run build && npm publish",
+    "publish:yarn": "rm -rf lib && npm run build && yarn publish",
     "prepare": "node ./scripts/prepublish.js",
     "postpublish": "node ./scripts/postpublish.js"
   },
