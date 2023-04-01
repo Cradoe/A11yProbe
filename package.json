@@ -1,10 +1,10 @@
 {
   "name": "a11yprobe",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "A package for checking the accessibility of a website by automatically retrieving all subpages and running accessibility tests with the WCAG 2.1 AA standard.",
   "main": "lib/index.js",
-  "type": "module",
   "private": false,
+  "type": "module",
   "bin": {
     "a11yprobe": "lib/index.js"
   },
@@ -18,8 +18,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "start": "node lib/index.js",
-    "publish:npm": "rm -rf lib && npm run build && npm publish"
+    "publish:npm": "rm -rf lib && npm run build && npm publish",
+    "prepare": "node ./scripts/prepublish.js",
+    "postpublish": "node ./scripts/postpublish.js"
   },
   "author": "Ismail Obadimu",
   "license": "ISC",
@@ -32,7 +33,9 @@
     "@types/node": "^16.10.1",
     "@types/pa11y": "^5.3.5",
     "ts-node-dev": "^1.1.6",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
   },
   "repository": {
     "type": "git",
@@ -40,5 +43,8 @@
   },
   "bugs": {
     "url": "https://github.com/yourusername/a11yprobe/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
