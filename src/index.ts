@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { runAccessibilityCheck } from "./accessibility-check";
 
 (async () => {
