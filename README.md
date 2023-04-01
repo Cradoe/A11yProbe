@@ -25,15 +25,21 @@ yarn add a11yprobe
 
 ## Usage
 
-To use A11yProbe, create a a11yprobe.json file in the root of your project, fill the URL of your application:
+To use A11yProbe, create a **a11yprobe.json** file in the root of your project, fill the URL of your application:
 
 ```json
 {
-  "url": "https://example.com"
+  "url": "http://localhost:3000"
 }
 ```
 
-By default, A11yProbe will run accessibility tests using the Pa11y library with the WCAG 2.1 AA standard. You can also customize the options passed to Pa11y by creating a pa11y.json file in your project directory.
+**NB: Change 3000 to the port your app is currently running.**
+
+Open another terminal (**_while your app is running_**), then run
+
+```javascript
+npx a11yprobe
+```
 
 ## Contributing
 
@@ -51,6 +57,6 @@ Thank you for considering contributing to this project! We welcome any contribut
 
 We appreciate all contributions and will review them as quickly as possible. Thanks for helping make this project better!
 
-## License
+<!-- ## License -->
 
-This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
+<!-- This project is licensed under the [ISC](LICENSE) - see the [LICENSE](LICENSE) file for details. -->
