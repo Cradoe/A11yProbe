@@ -1,13 +1,13 @@
 # A11yProbe
 
-A11yProbe is a package for checking the accessibility of a website. It allows developers to create a JSON file with the URL of their application and then automatically retrieves all the subpages in the application to run accessibility tests on them.
+A11yProbe is a tool that helps you run automated accessibility tests on your website and displays a report of any issues found. The tool uses testing library that supports the Web Content Accessibility Guidelines (WCAG) 2.1.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+<!-- - [License](#license) -->
 
 ## Installation
 
