@@ -1,14 +1,27 @@
 {
-  "name": "your-package-name",
+  "name": "a11yprobe",
   "version": "1.0.0",
   "description": "Your package description",
-  "main": "dist/index.js",
-  "type": "module",
+  "main": "lib/index.js",
+  "type": "module", 
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cradoe/A11yProbe"
+  },
+  "keywords": [
+    "accessibility",
+    "pa11y",
+    "test",
+    "web"
+  ],
+  "homepage": "https://github.com/Cradoe/A11yProbe",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node lib/index.js",
+    "publish:npm": "rm -rf lib && npm run build && npm publish --access public"
   },
   "author": "Ismail Obadimu",
   "license": "ISC",
