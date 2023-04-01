@@ -11,17 +11,17 @@ A11yProbe is a tool that helps you run automated accessibility tests on your web
 
 ## Installation
 
-You can install A11yProbe using npm or yarn:
+You can install A11yProbe using npm:
 
 ```javascript
 npm install a11yprobe
 ```
 
-or
+<!-- or
 
 ```javascript
 yarn add a11yprobe
-```
+``` -->
 
 ## Usage
 
