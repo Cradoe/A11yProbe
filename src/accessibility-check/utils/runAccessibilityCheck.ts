@@ -1,23 +1,10 @@
 import pa11y from "pa11y";
-import axios from "axios";
-import { getSubPages } from "../../web-scraping";
 import { Issue } from "../interfaces";
-import { config } from "../../config";
 import cliProgress from "cli-progress";
 
-export async function runAccessibilityCheck(): Promise<Issue[]> {
-  const configFile = await config();
-  let rootUrl: string = configFile.url;
-
-  try {
-    const response = await axios.get(rootUrl);
-    rootUrl = response.request.res.responseUrl;
-  } catch (error) {
-    console.error(`Failed to fetch root URL: ${error}`);
-    return;
-  }
-
-  const pages: string[] = await getSubPages(rootUrl);
+export const runAccessibilityCheck = async (
+  pages: string[]
+): Promise<Issue[]> => {
   const progressBar = new cliProgress.SingleBar(
     {},
     cliProgress.Presets.shades_classic
@@ -42,7 +29,7 @@ export async function runAccessibilityCheck(): Promise<Issue[]> {
             // Use cached result if available
             return cache.get(page);
           } else {
-            const result = await pa11y(rootUrl + page);
+            const result = await pa11y(page);
             if (result.issues.length > 0) {
               result.issues.forEach((issue: any) => {
                 issue.page = page;
@@ -79,4 +66,4 @@ export async function runAccessibilityCheck(): Promise<Issue[]> {
   // stop the progress bar
   progressBar.stop();
   return issues;
-}
+};
