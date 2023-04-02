@@ -3,6 +3,7 @@
   "version": "1.0.16",
   "description": "AA11yProbe is a tool that helps you run automated accessibility tests on your website and displays a report of any issues found. The tool uses an accessibility testing library that supports the Web Content Accessibility Guidelines (WCAG) 2.1.",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "private": false,
   "type": "module",
   "bin": {

@@ -6,6 +6,7 @@
     "rootDir": "src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "declaration": true
   },
   "include": [ "**/*.ts"],
 }
