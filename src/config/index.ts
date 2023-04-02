@@ -27,6 +27,6 @@ export const config = async (): Promise<Config> => {
       url: configFile.url,
     };
   } catch (error) {
-    return Promise.reject(error);
+    console.error(error.message);
   }
 };
